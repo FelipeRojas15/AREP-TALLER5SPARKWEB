@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.escuelaing.arem.app.sparkWeb;
+package edu.escuelaing.arem.app.sparkWeb.controller;
+import edu.escuelaing.arem.app.sparkWeb.persistence.DataStub;
 import edu.escuelaing.arem.app.*;
 import java.io.IOException;
 import static spark.Spark.*;
@@ -40,6 +41,11 @@ public class SparkWeb {
 
         return "";
     }
+
+    /**
+     * Indica el puerto por donde se va a comunicar el servidor
+     * @return int Puerto
+     */
     public static int getPort(){
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
