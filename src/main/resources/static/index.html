@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Formulario </title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/apiclient.js"></script>
+        <script src="js/app.js"></script>
+
+    </head>
+    <body background = "fondo.png">
+        <div style = "color: black; text-align: center;">
+        <h1 class ="formulario__titulo" style="color:black"> Ingrese los datos aca  </h1>
+        <form action="" class="formulario">
+            
+            <input type="text" name="data" id="data" class ="formulario__input" placeholder="Ingresar dato"><br>
+            
+            <button type="button" id="buttonAdd" onclick="app.insertData()"> Submit</button>
+            
+        </form>
+            <table class="table table-striped" id="messages">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">Date</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <span> <img src="pinguino.png"></span>
+        </div>
+    </body>
+
+</html>
